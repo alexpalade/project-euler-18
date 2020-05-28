@@ -1,4 +1,4 @@
-# Project Euler: Problem 18
+# Project Euler #18 (demo)
 
 Demo for [problem 18](https://projecteuler.net/problem=18) ("Maximum path sum I"). It uses Javascript and the Canvas API.
 
