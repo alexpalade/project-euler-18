@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <title>Maximum path sum I</title>
+        <link rel="stylesheet" href="main.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    </head>
+    <body onload="controller.reset()">
+
+        <section class="section">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-half main-content">
+
+                        <h1 class="title is-4">Maximum path sum I</h1>
+                        <h2 class="subtitle is-6">
+                            <a href="https://projecteuler.net/problem=18" target="_blank">Project Euler 18</a>
+                        </h2>
+                        <div id="controls">
+                            <button class="button" id="load-input-1-btn">
+                                1
+                            </button>
+                            <button class="button" id="load-input-2-btn">
+                                2
+                            </button>
+                            <button class="button" onclick="controller.handleRandomize();">
+                                <span class="icon">
+                                    <i class="fas fa-dice-five"></i>
+                                </span>
+                                <span>random</span>
+                            </button>
+                            <button class="button" onclick="controller.handleIncrease();">
+                                <span class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </span>
+                            </button>
+                            <button class="button" onclick="controller.handleDecrease();">
+                                <span class="icon">
+                                    <i class="fas fa-minus"></i>
+                                </span>
+                            </button>
+                        </div>
+
+                        <canvas id="canvas" width="400" height="400"></canvas>
+
+                        <p id="result"></p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="inputs.js"></script>
+        <script src="model.js"></script>
+        <script src="controller.js"></script>
+        <script src="view.js"></script>
+
+    </body>
+</html>
