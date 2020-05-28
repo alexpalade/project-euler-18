@@ -24,6 +24,7 @@ controller.canvasClick = function(e) {
     };
     view.circles.forEach(circle => {
         if (isIntersect(pos, circle)) {
+			this.showResult(model.numbers[circle.index].sum);
             view.solutionRoot = circle.index;
             view.clear();
             view.render();
