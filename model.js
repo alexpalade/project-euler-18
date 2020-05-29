@@ -54,17 +54,14 @@ model.randomize = function(levels) {
   if (levels !== undefined) {
     this.levels = levels;
   }
-  console.log(this.numbers.raw.length);
 
   let numbers = [];
   for (let i = 1; i <= this.levels; i++) {
     for (let j = 0; j < i; j++) {
-      console.log("i = ", i, " j = ", j);
       numbers.push(getRandomInt(100));
     }
   }
 
-  console.log(numbers.length);
   this.setNumbers(numbers);
 }
 
